@@ -1,19 +1,19 @@
 import React from "react";
-import {Link} from "react-router-dom";
+import ProductItem from "./ProductItem";
 import products from "./shared/products";
+import "./styles/Carousel.scss";
 
 
-function ProductList () {
+function ProductList ({ category }) {
+    const list = category ? products.filter( p => p.category === category ) : products;
+
         return (
-        <ul className="list-unstyled">
-            {products.map((product) => {
-                return (
-                    <li className="productList" key={product.id}>
-                        <p>"{product.name}"</p>
-                    </li>
-                )
-            })}
-        </ul>
+            <section className="carousel">
+                <div className="carousel__container">
+                    {list.map((product) =>                 
+                        <ProductItem product={product} category={category}/> )}
+                </div>
+                </section>
         )
 }
 

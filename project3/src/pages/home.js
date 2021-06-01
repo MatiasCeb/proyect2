@@ -1,14 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Header from "../components/Header";
 import SellerComponent from '../components/sellerComponent';
-import ProductList from "../components/ProductList";
+import Footer from "../components/Footer";
+import "./styles/home.scss";
 
 function Home() {
     return (
-      <div>
-        <h1>Funcionaaaa</h1>
-        <ProductList />
+      <div className="home">
+        <Header />
         <SellerComponent />
+        <Footer />
       </div>
     );
   }
