@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import products from "./shared/products";
 import ProductList from './ProductList';
 
 function SellerComponent() {

@@ -1,18 +1,29 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-import '../index.css';
+
+import Layout from "./Layout";
 import Home from "../pages/home";
 import ProductList from "../components/ProductList";
+import NotFound from "../pages/NotFound";
 
+import AppContext from "../context/AppContext";
+import useInitialState from "../hooks/useInitialState";
+import "./styles/App.css";
 
-function App() {
+const App = () => {
+  const initialState = useInitialState();
   return (
-      <BrowserRouter>
-              <Switch>
-                  <Route exact path="/" component={Home} />
-                  <Route exact path="/productos" component={ProductList} />
-              </Switch>
-      </BrowserRouter>
+      <AppContext.Provider value={initialState} >
+        <BrowserRouter>
+          <Layout>
+            <Switch>
+                <Route exact path="/" component={Home} />
+                <Route exact path="/productos" component={ProductList} />
+                <Route component={NotFound} />
+            </Switch>
+          </Layout>
+        </BrowserRouter>
+      </AppContext.Provider>
   );
 }
 

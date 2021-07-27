@@ -1,17 +1,22 @@
-import React from "react";
+import React, { useContext } from "react";
 import ProductItem from "./ProductItem";
-import products from "./shared/products";
+import AppContext from "../context/AppContext";
 import "./styles/Carousel.scss";
 
 
-function ProductList ({ category }) {
-    const list = category ? products.filter( p => p.category === category ) : products;
+function ProductList () {
+    const { state, addToCart } = useContext(AppContext);
+    const {products} = state;
+
+    const handleAddToCart = product => () => {
+        addToCart(product)
+    }
 
         return (
             <section className="carousel">
                 <div className="carousel__container">
-                    {list.map((product) =>                 
-                        <ProductItem product={product} category={category}/> )}
+                    {products.map((product) =>                 
+                        <ProductItem key= {product.id} product={product} handleAddToCart={handleAddToCart}/> )}
                 </div>
                 </section>
         )
