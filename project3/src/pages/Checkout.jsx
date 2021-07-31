@@ -15,6 +15,7 @@ const Checkout = () => {
         const reducer = ( accumulator, currentValue ) => accumulator + currentValue.price;
         const sumPrev = cart.reduce(reducer, 0);
         const sum = sumPrev.toFixed(2);
+        console.log(cart)
         return sum;
     }
 
@@ -23,7 +24,7 @@ const Checkout = () => {
             <div className="Checkout-content">
                 {cart.length > 0 ? <h3>Lista de Pedidos:</h3> : <h3>Sin pedidos...</h3> }
                 {cart.map((product) => (
-                    <div className="Checkout-item">
+                    <div key={product.cardId} className="Checkout-item">
                         <div className="Checkout-element">
                             <p>{product.name}</p>
                             <span>${product.price}</span>
