@@ -15,7 +15,6 @@ const Checkout = () => {
         const reducer = ( accumulator, currentValue ) => accumulator + currentValue.price;
         const sumPrev = cart.reduce(reducer, 0);
         const sum = sumPrev.toFixed(2);
-        console.log(cart)
         return sum;
     }
 
