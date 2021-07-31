@@ -6,9 +6,9 @@ import "./styles/product.scss";
 
 const ProductItem = ({ product, handleAddToCart }) => {
     return(
-        <div className="product-item">
+        <div className="products-item">
             <img className="product-item__img" src={product.image} alt={product.title} />
-            <div className="product-item__details">
+            <div className="Products-item-info">
                 <h2>
                     {product.title}
                     <span>
