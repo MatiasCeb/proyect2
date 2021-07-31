@@ -10,7 +10,7 @@ export default {
             category: 'Cara',
             subcategory:'Vincha',
             label:'Hot',
-            price:'220,00',
+            price: 220.00,
             description:'Uno de los artículos más usados en todos los cotillones. Ideal para cualquier  tipo de fiesta',          
         },
         {
@@ -20,7 +20,7 @@ export default {
             category: 'Cara',
             subcategory:'Antifaz',
             label:'',
-            price:'250,00',
+            price:250.50,
             description:'Antifaz veneciano con detalles de volados y perlas, con plumas de colores',
         },
         {
@@ -30,7 +30,7 @@ export default {
             category: 'Cara',
             subcategory:'Vincha',
             label:'New',
-            price:'190,00',
+            price:190.15,
             description:'Una opción super colorida y divertida para sumarle a tu cotillón. Vinchas florales de todos los colores!',
         },
         {
@@ -40,7 +40,7 @@ export default {
             category: 'Cara',
             subcategory:'Vincha',
             label:'',
-            price:'805,00',
+            price:805.00,
             description:'Hermosisima vincha cleopatra ideal para fiestas temáticas! Colores variados, elegí el que más te guste!',
         },
         {
@@ -50,7 +50,7 @@ export default {
             category: 'Manos',
             subcategory:'Pulsera',
             label:'',
-            price:'95,00',
+            price:95.00,
             description:'Pulseras LED luminosas. Sumalas a tu cotillón para darle más color!',
         },
         {
@@ -60,7 +60,7 @@ export default {
             category: 'Manos',
             subcategory:'Pulsera',
             label:'',
-            price:'50,00',
+            price:50.00,
             description:'Ideal para divertir a tus invitados con estas pulseras de Luz LED!',
         },
         {
@@ -70,7 +70,7 @@ export default {
             category: 'Manos',
             subcategory:'Anillo',
             label:'',
-            price:'90,00',
+            price:90.00,
             description:'Suma al cotillón de tu fiestas estos pavos reales luminosos LED para darle más diversión a tus invitados!',
         },
         {
@@ -80,7 +80,7 @@ export default {
             category: 'Cuerpo',
             subcategory:'Collar',
             label:'',
-            price:'370,00',
+            price:370.00,
             description:'Collar luminoso lleno de colores para sumarle mucha diversión a tu noche!',
         },
         {
@@ -90,7 +90,7 @@ export default {
             category: 'Cuerpo',
             subcategory:'Corbata',
             label:'',
-            price:'360,00',
+            price:360.00,
             description:'Un accesorio super divertido para sumarle a tu cotillón! Ideal para cualquier clase de fiesta!',
         },
         {
@@ -100,7 +100,7 @@ export default {
             category: 'Cuerpo',
             subcategory:'Collar',
             label:'',
-            price:'300,00',
+            price:300.00,
             description:'Collares de luz LED ideal para cualquier tipo de cotillón! Dale más color y diversión a tus invitados con estos collares LED',
         },
         {
@@ -110,7 +110,7 @@ export default {
             category: 'Pies',
             subcategory:'Calzado',
             label:'',
-            price:'150,00',
+            price:150.00,
             description:'Bandanas Fluo super prácticas! Elegí el color que más te guste',
         },
         {
@@ -120,7 +120,7 @@ export default {
             category: 'Maquillaje',
             subcategory:'Glitter',
             label:'',
-            price:'350,00',
+            price:350.00,
             description:'Divertidos glitters en gel para todo el cuerpo. Super brillantes y faciles de aplicar! Ideal para cualquier tipo de eventos y fiestas!',
         },
     ]
