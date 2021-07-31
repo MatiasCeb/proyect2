@@ -1,17 +1,17 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 
-import Layout from "./Layout";
-import Home from "../pages/home";
-import ProductList from "../components/ProductList";
-import Checkout from '../pages/Checkout';
-import Information from '../pages/Information';
-import Payment from '../pages/Payment';
-import NotFound from "../pages/NotFound";
+import Layout from "./components/Layout";
+import Home from "./pages/home";
+import ProductList from "./components/ProductList";
+import Checkout from './pages/Checkout';
+import Information from './pages/Information';
+import Payment from './pages/Payment';
+import NotFound from "./pages/NotFound";
 
-import AppContext from "../context/AppContext";
-import useInitialState from "../hooks/useInitialState";
-import "./styles/App.css";
+import AppContext from "./context/AppContext";
+import useInitialState from "./hooks/useInitialState";
+import "./App.css";
 
 const App = () => {
   const initialState = useInitialState();
