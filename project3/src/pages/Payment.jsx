@@ -12,7 +12,7 @@ const Payment = () => {
             <div className="Payment-content">
                 <h3>Resumen del pedido:</h3>
                 {cart.map((item) => (
-                    <div className="Payment-item" key={item.name}>
+                    <div className="Payment-item" key={item.cartId}>
                         <div className="Payment-element">
                             <h4>{item.name}</h4>
                             <span>$ {' '} {item.price}</span>

@@ -19,7 +19,7 @@ function ProductList () {
             <section className="carousel">
                 <div className="carousel__container">
                     {products.map((product) =>                 
-                        <ProductItem key= {product.id} product={product} handleAddToCart={handleAddToCart}/> )}
+                        <ProductItem key= {product.cartId} product={product} handleAddToCart={handleAddToCart}/> )}
                 </div>
                 </section>
         )
